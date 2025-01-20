@@ -1,0 +1,109 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/background3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: "AdventureTime";
+  src: url("../fonts/Adventure Time Logo.ttf") format("truetype");
+}
+body {
+  font-family: "AdventureTime";
+}
+
+h1, button {
+  font-family: "AdventureTime", cursive;
+}
+
+audio {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  margin-left: 130px;
+  border-radius: 10px;
+  width: 20px;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 40px;
+}
+
+.content button {
+  padding: 13px 30px;
+  font-size: 1.5rem;
+  color: white;
+  background: #842b2b;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.content button:hover {
+  background: #722f37;
+  transform: scale(1.1);
+}
+
+.content button:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url("../img/2.png"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+  body .content {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 40px;
+  }
+  body .content button {
+    padding: 13px 30px;
+    font-size: 1.5rem;
+    color: white;
+    background: #842b2b;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  body .content button:hover {
+    background: #722f37;
+    transform: scale(1.1);
+  }
+  body .content button:active {
+    transform: scale(0.95);
+  }
+}
+
+/*# sourceMappingURL=pantalla2.css.map */

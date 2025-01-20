@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whac a Mole</title>
+    <link rel="stylesheet" href="styles/pantalla3.css">
+</head>
+<body>
+    <h1>Whac a BMO</h1>
+    <h2 id="score">0</h2>
+    <!-- 3x3 -->
+    <div id="board">
+    </div>
+    <div id="game-over-screen" style="display: none;">
+        <img src="./img/gameover.png" alt="Game Over" id="game-over-image">
+        <h2 id="final-score"></h2>
+        <button id="restart-btn">Volver a jugar</button>
+    </div>    
+    <audio controls autoplay>
+        <source src="./audio/aventura-hora-de.mp3" type="audio/mp3">
+        Tu navegador no soporta la reproducción de audio.
+    </audio> 
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  background: url("../img/fondo.png");
+  background-size: cover;
+}
+
+@font-face {
+  font-family: "AdventureTime";
+  src: url("../fonts/Adventure Time Logo.ttf") format("truetype");
+}
+h1 {
+  font-family: "AdventureTime", cursive;
+  margin-left: -260px;
+  color: #63bda4;
+}
+
+button {
+  font-family: "AdventureTime", cursive;
+  margin-left: -260px;
+  color: white;
+}
+
+#score {
+  font-size: 25px;
+  margin-left: -260px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+audio {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  margin-left: 150px;
+  border-radius: 10px;
+  width: 20px;
+}
+
+#board {
+  width: 540px;
+  height: 540px;
+  margin-left: 310px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  background: url("../img/fondo.jpg");
+  background-size: cover;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+#board div {
+  margin-top: 30px;
+  width: 180px;
+  height: 120px;
+  background-image: url("../img/hoyo1.png");
+  background-size: cover;
+}
+#board div img {
+  width: 100px;
+  height: 100px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#game-over-screen {
+  position: fixed;
+  top: 45%;
+  left: 40%;
+  transform: translate(-50%, -30%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 15px;
+  z-index: 1000;
+}
+
+#final-score {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+#game-over-image {
+  width: 200px;
+  height: auto;
+}
+
+#restart-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: "AdventureTime", cursive;
+  background-color: #842b2b;
+  margin-left: auto;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#restart-btn:hover {
+  background-color: #722f37;
+}
+
+@media (max-width: 768px) {
+  body {
+    background: url("../img/fondo.png");
+    background-size: cover;
+    height: auto;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 30px 0;
+  }
+  #score {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+  #board {
+    width: 80vw;
+    height: auto;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  #board div {
+    width: 100%;
+    height: 100px;
+  }
+  #board div img {
+    width: 80px;
+    height: 80px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  audio {
+    width: 20px;
+    top: 90%;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+  }
+  #score {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  #board {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    gap: 5px;
+  }
+  #board div {
+    height: 80px;
+  }
+  #board div img {
+    width: 65px;
+    height: 65px;
+  }
+  #game-over-screen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 350px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  #final-score {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+  }
+  #game-over-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  #restart-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    margin: 15px 0 0 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #d9534f;
+    color: white;
+    cursor: pointer;
+  }
+  #restart-btn:hover {
+    background-color: #c9302c;
+  }
+}
+
+/*# sourceMappingURL=pantalla3.css.map */
